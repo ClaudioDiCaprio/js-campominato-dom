@@ -1,0 +1,136 @@
+/* *********COMMONS********* */
+*{
+    padding: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.clearfix::after {
+    content:"";
+    clear: both;
+    display: table;
+}
+
+header {
+    height: 90px;
+    display: flex;
+    align-items: center;
+    background-color: black;
+}
+
+.container{
+    height: 100vh;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+  }
+
+
+.logo .better {
+    margin: 0 50px;
+    padding: 0 20px;
+    font-size: 30px;
+    position: relative;
+    right: 50px;
+    font-weight: bold;
+    vertical-align: middle;
+    color: #856d56;
+ }
+
+.mine_btn {
+    height: 28px;
+    margin: 0 10px;
+    padding: 0 24px;
+    border-radius: 10px;
+    border: none;
+    background-image: radial-gradient(yellow,red);
+    cursor: pointer;
+    /* position: relative;
+    left: 50px; */
+ }
+
+.difficulty{
+   height: 28px;
+   margin: 0 10px;
+   padding: 0px;
+   background-color: #b19c88;
+   border-radius: 10px;
+   cursor: pointer;
+ } 
+
+main {
+     background-color: blueviolet;
+    height: calc(100vh - 90px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/mk_2.png);
+    background-size: cover;
+    background-position-y:-80px ;
+    /* opacity: 2; */
+ }
+
+.tatami {
+    
+    height: 800px;
+    width: 800px;
+ } 
+
+.tatami h1 {
+    font-size: 70px;
+    position: relative;
+    top: 565px;
+    color: #856d56;
+ } 
+
+.square {
+    border: 3px solid #c2b5a9;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 35px;
+    color: grey;
+    cursor: pointer;  
+ }
+ 
+.square.beginner {
+    width: calc(100% / 10);
+    height: calc(100% / 10);
+    border-radius: 20px;
+ }
+
+.square.warrior {
+    width: calc(100% / 9);
+    height: calc(100% / 9);
+    border-radius: 20px;
+ }
+
+.square.god {
+    width: calc(100% / 7);
+    height: calc(100% / 7);
+    border-radius: 20px;
+ } 
+
+.toaddtochange{
+    background-image:radial-gradient(yellow,red);
+ }
+
+
+
+ /* *********DEBUG********* */
+/* .debug main {
+    background-color: blueviolet;
+} */
+
+/* .debug .tatami {
+    background-color: blue;
+    border: 2px solid blue;
+    opacity: 0.5;
+ } */
+/* .debug .square {
+    background-color: blueviolet;
+    opacity: 0.5;
+}  */
