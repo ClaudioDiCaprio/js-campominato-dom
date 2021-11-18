@@ -34,11 +34,9 @@ playBtn.addEventListener('click', function () {
    tatami.innerHTML = '';
 
    let valueDifficulty = selectDifficulty.value;
-   // console.log('Rank: ', valueDifficulty);
 
    Grid(howMany(valueDifficulty));
-   // console.log('Grid: ', howMany(valueDifficulty));
-   debugger
+   
 });
 
 
@@ -64,11 +62,14 @@ function Grid(value) {
       square.className = ('square');
       
       square.addEventListener("click" , function(){
-
-        if ( x == bomb[i] ){//HERE SE IMPOSTO CHE LA X É UGUALE A  6 X ESEMPIO SI COLORERÁ COME SEGUE, SE INVECE LA IMPOSTO UGUALE BOMB[i] NON SUCCEDE NULLA NONOSTATE L'ARRAY VENGA POPOLATO
+        this.textContent
+        console.log(this)
+        for(let t = 0; t = bomb.length; i++){
+            if ( this.textContent == bomb[i]){//HERE SE IMPOSTO CHE LA X É UGUALE A  6 X ESEMPIO SI COLORERÁ COME SEGUE, SE INVECE LA IMPOSTO UGUALE BOMB[i] NON SUCCEDE NULLA NONOSTATE L'ARRAY VENGA POPOLATO
              square.classList.add('toaddtochange');
-        }else{
+            }else{
             square.classList.add('bmk');
+            }
         }    
       });
      
@@ -88,6 +89,7 @@ function Grid(value) {
       }
       
       let x = square.innerHTML = (i+1);
+     
    }
 }
 
