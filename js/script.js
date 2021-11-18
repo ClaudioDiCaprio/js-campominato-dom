@@ -47,7 +47,7 @@ function Grid(value) {
 
     let bomb =[];
 
-      for(let j = 0; j < 1; j ++){
+      for(let j = 0; j < 1; j++){
 
             for(let c = 0 ; c < 16; c++){
                 claymore = (Math.floor(Math.random() * 100 + 1));
@@ -64,7 +64,7 @@ function Grid(value) {
       square.addEventListener("click" , function(){
         this.textContent
         console.log(this)
-        for(let t = 0; t = bomb.length; i++){
+        for(let t = 0; t = bomb.length; t++){
             if ( this.textContent == bomb[i]){//HERE SE IMPOSTO CHE LA X É UGUALE A  6 X ESEMPIO SI COLORERÁ COME SEGUE, SE INVECE LA IMPOSTO UGUALE BOMB[i] NON SUCCEDE NULLA NONOSTATE L'ARRAY VENGA POPOLATO
              square.classList.add('toaddtochange');
             }else{
