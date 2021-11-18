@@ -114,9 +114,13 @@ main {
     border-radius: 20px;
  } 
 
-.toaddtochange{
+ .bmk{
     background-image:radial-gradient(yellow,red);
- }
+ } 
+
+/* .toaddtochange{
+    background-image:radial-gradient(green,blue);
+ } */
 
 
 
