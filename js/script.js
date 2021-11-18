@@ -65,7 +65,7 @@ function Grid(value) {
         this.textContent
         console.log(this)
         for(let t = 0; t < bomb.length; t++){
-            if ( this.textContent == bomb[t]){LATO
+            if ( this.textContent == bomb[t]){
              square.classList.add('toaddtochange');
             }else{
             square.classList.add('bmk');
