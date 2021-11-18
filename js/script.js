@@ -65,7 +65,7 @@ function Grid(value) {
       
       square.addEventListener("click" , function(){
 
-        if ( x == bomb[i] ){
+        if ( x == bomb[i] ){//HERE SE IMPOSTO CHE LA X É UGUALE A  6 X ESEMPIO SI COLORERÁ COME SEGUE, SE INVECE LA IMPOSTO UGUALE BOMB[i] NON SUCCEDE NULLA NONOSTATE L'ARRAY VENGA POPOLATO
              square.classList.add('toaddtochange');
         }else{
             square.classList.add('bmk');
