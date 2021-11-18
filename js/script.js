@@ -26,6 +26,7 @@
 // 1 GENERATE DIV AND APPEND THEM
 // 2 GIVES BACK A NUMBER BASED ON DIFFICULTY VALUE
 // 3 MAIN BRINGS SQUARE TO LIFE
+
 // 1
 function SquareMaster(create) {
    
@@ -50,7 +51,7 @@ function howMany(rank) {
 
  function Grid(value) {
    
-    // VALUE WILL BE REPLACE BY THE VALUE THAT I'LL GET AFTER THE  CHOICE WITH THE HELP OF A VARIABLE
+    // VALUE WILL BE REPLACE BY THE VALUE THAT I'LL GET (AFTER THE  CHOICE WILL BE MADE) WITH THE HELP OF A VARIABLE  Grid==>howMany==>valueDifficulty
     for (let i = 0; i < value; i++) {
 
        const square = SquareMaster(tatami);
@@ -84,4 +85,9 @@ const selectDifficulty = document.getAnimations('selectDifficulty');
 const playBtn = document.querySelector('.mine_btn');
 playBtn.addEventListener('click', function () {
     tatami.innerHTML = '';
+
+    //here we get the value as in train ticket exercise
+    let valueDifficulty = selectDifficulty.value;
+    // HERE IS WHERE MAGIC HAPPENS;
+    Grid(howMany(valueDifficulty));
 });
