@@ -76,4 +76,9 @@ function howMany(rank) {
     }
  }
 
- 
+//  REALWORK
+
+const tatami = document.querySelector('.tatami');
+const selectDifficulty = document.getAnimations('selectDifficulty');
+
+const playBtn = document.querySelector('.mine_btn');
