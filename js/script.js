@@ -64,7 +64,7 @@ function Grid(value) {
       square.addEventListener("click" , function(){
         this.textContent
         console.log(this)
-        for(let t = 0; t = bomb.length; t++){
+        for(let t = 0; t < bomb.length; t++){
             if ( this.textContent == bomb[i]){//HERE SE IMPOSTO CHE LA X É UGUALE A  6 X ESEMPIO SI COLORERÁ COME SEGUE, SE INVECE LA IMPOSTO UGUALE BOMB[i] NON SUCCEDE NULLA NONOSTATE L'ARRAY VENGA POPOLATO
              square.classList.add('toaddtochange');
             }else{
